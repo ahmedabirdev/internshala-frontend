@@ -1,3 +1,4 @@
+import { getBearerToken } from "../../utils/auth";
 import axios from "../../utils/axios";
 import { jobsFound, jobdetail, createdjob } from "../Reducers/jobsSlice";
 
@@ -20,7 +21,7 @@ export const alljobdetails = (id) => async (dispatch) => {
 
 export const CreateJob = (formData) => async (dispatch) => {
   try {
-    const response = await axios.post(`/employe/job/create/`, formData);
+    const response = await axios.post(`/employe/job/create`, formData, getBearerToken());
     dispatch(createdjob(response.data.newinternship));
   } catch (error) {
     (error);

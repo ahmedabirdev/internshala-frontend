@@ -1,3 +1,4 @@
+import { getBearerToken } from "../../utils/auth";
 import axios from "../../utils/axios";
 import {
   interdetail,
@@ -23,7 +24,7 @@ export const internshipdetail = (id) => async (dispatch) => {
 };
 export const CreateInternship = (formData) => async (dispatch) => {
   try {
-    const response = await axios.post(`/employe/internship/create/`, formData);
+    const response = await axios.post(`/employe/internship/create`, formData, getBearerToken());
     dispatch(createdinternship(response.data.newinternship));
   } catch (error) {
     //(error);

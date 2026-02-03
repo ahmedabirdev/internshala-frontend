@@ -88,7 +88,7 @@ export const Delete = (userId) => async (dispatch) => {
 };
 export const SendMail = (formdata) => async (dispatch) => {
   try {
-    const response = await axios.post("/student/send-mail/", formdata);
+    const response = await axios.post("/student/send-mail", formdata);
     dispatch(sendmail(response.data));
   } catch (error) {
     //(error.response.data);
