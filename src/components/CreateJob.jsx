@@ -217,7 +217,7 @@ function createJob() {
             <div className="w-full flex justify-between">
               <div className="w-[48%] ">
                 <h1 className=" mt-16 text-2xl font-bold mb-2 text-[#272727c1]">
-                  Salary (LPA)
+                  Salary ( $ k/month)
                 </h1>
                 <div className=" flex gap-10">
                   <input
@@ -233,7 +233,7 @@ function createJob() {
                       }
                     }}
                     name="salary"
-                    placeholder="eg. 60000"
+                    placeholder="eg. 6"
                     id=""
                   />
                   {formData.salary.length === 0 && (

@@ -319,7 +319,7 @@ export default function Resumepage() {
                 {resume.email}
               </h1>
               <h1 className="text-2xl mt-2  text-[#1c1c1c9d]  font-semibold ">
-                +91 {resume.contact}
+                 {resume.contact}
               </h1>
               <h1 className="text-2xl mt-2  text-[#1c1c1c9d]  font-semibold ">
                 {resume.city}

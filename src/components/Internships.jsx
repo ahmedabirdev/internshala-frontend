@@ -120,7 +120,7 @@ export default function Internships() {
                   />
                   {item.stipend && (
                     <>
-                      <h4>{item.stipend.amount}</h4>
+                      <h4> $ {item.stipend.amount} / year</h4>
                     </>
                   )}
                 </div>
@@ -129,7 +129,7 @@ export default function Internships() {
                     size={15}
                     color="#1a1a1aa8" // set custom `width` and `height`
                   />
-                  <h4>{item.duration}</h4>
+                  <h4>{item.duration} Months</h4>
                 </div>
                 <div className="view">
                   <button className="font-bold">Internship</button>

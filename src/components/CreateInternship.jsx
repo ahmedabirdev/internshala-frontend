@@ -239,7 +239,7 @@ function createInternship() {
             <div className="w-full flex justify-between">
               <div className="w-[48%] ">
                 <h1 className=" mt-16 text-2xl font-bold mb-2 text-[#272727c1]">
-                  Stipend
+                  Stipend  ( $ / year)
                 </h1>
                 <div className=" flex gap-10">
                   <select
@@ -349,7 +349,7 @@ function createInternship() {
                   type="text"
                   onChange={handleChange}
                   name="from"
-                  placeholder="eg. 2 Feburary 2024"
+                  placeholder="eg. 2 Feburary 2026"
                   id=""
                 />
                 {formData.from && formData.from.length < 3 && (
@@ -367,7 +367,7 @@ function createInternship() {
                   type="text"
                   name="to"
                   onChange={handleChange}
-                  placeholder="eg. 3 March 2024"
+                  placeholder="eg. 3 March 2026"
                   id=""
                 />
                 {formData.to && formData.to.length < 3 && (
@@ -402,8 +402,7 @@ function createInternship() {
                 !formData.openings || // Ensure openings is not empty
                 formData.openings.length === 0 // Disable if last name length is less than 3
               }
-              className={`px-[4vh] mt-[5vh] mb-10 py-[2vh] ml-[35vh] max-[600px]:ml-[15vh] text-2xl font-semibold rounded-2xl text-white bg-[#008BDC] ${
-                (!formData.profile ||
+              className={`px-[4vh] mt-[5vh] mb-10 py-[2vh] ml-[35vh] max-[600px]:ml-[15vh] text-2xl font-semibold rounded-2xl text-white bg-[#008BDC] ${(!formData.profile ||
                   formData.profile.length < 3 || // Disable if first name length is less than 3
                   !formData.responsibility ||
                   formData.responsibility.length < 3 || // Disable if last name length is less than 3
@@ -424,7 +423,7 @@ function createInternship() {
                   !formData.openings || // Ensure openings is not empty
                   formData.openings.length === 0) && // Disable if last name length is less than 3
                 "cursor-not-allowed" // Add cursor-not-allowed class if button is disabled
-              }`}
+                }`}
             >
               Create Internship
             </button>

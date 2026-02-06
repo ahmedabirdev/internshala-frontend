@@ -79,7 +79,7 @@ export default function education(props) {
                     onChange={handleChange}
                     name="startyear"
                     id=""
-                    placeholder="2020"
+                    placeholder="2026"
                   />{" "}
                 </div>
                 <div className="w-[45%]  ">
@@ -92,7 +92,7 @@ export default function education(props) {
                     onChange={handleChange}
                     name="endyear"
                     id=""
-                    placeholder="2024"
+                    placeholder="2026"
                   />{" "}
                 </div>
               </div>

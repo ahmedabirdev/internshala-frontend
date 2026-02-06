@@ -57,7 +57,7 @@ export const applyinternship = (internshipId) => async (dispatch) => {
 };
 export const update = (formData, id) => async (dispatch) => {
   try {
-    await axios.post(`/student/studentupdate/${id}`, formData); // Pass formData to the backend
+    await axios.post(`/student/studentupdate/${id}`, formData , getBearerToken()); // Pass formData to the backend
     dispatch(asynccurrentUser());
   } catch (error) {
     //(error.response.data);
