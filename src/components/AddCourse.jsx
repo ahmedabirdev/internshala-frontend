@@ -96,7 +96,7 @@ export default function addcourses(props) {
                   type="text"
                   onChange={handleChange}
                   name="location"
-                  placeholder="eg.Mumbai"
+                  placeholder="eg.New York"
                   id=""
                 />
               </div>

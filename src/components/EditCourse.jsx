@@ -104,7 +104,7 @@ export default function Editcourse(props) {
                 value={formData.location}
                 onChange={handleChange}
                 name="location"
-                placeholder="eg.Mumbai"
+                placeholder="eg.New York"
                 id=""
               />
             </div>

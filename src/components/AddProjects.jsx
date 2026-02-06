@@ -85,7 +85,7 @@ export default function addprojects(props) {
                     onChange={handleChange}
                     name="startmonth"
                     id=""
-                    placeholder="2026"
+                    placeholder="January"
                   />{" "}
                 </div>
                 <div className="w-[45%]  ">
@@ -98,7 +98,7 @@ export default function addprojects(props) {
                     onChange={handleChange}
                     name="endmonth"
                     id=""
-                    placeholder="2026"
+                    placeholder="December"
                   />{" "}
                 </div>
               </div>

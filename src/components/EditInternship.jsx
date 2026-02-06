@@ -103,7 +103,7 @@ export default function Editinternship(props) {
                   onChange={handleChange}
                   name="location"
                   value={formData.location}
-                  placeholder="eg.Mumbai"
+                  placeholder="eg.New York"
                   id=""
                 />
               </div>
