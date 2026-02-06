@@ -64,7 +64,7 @@ export default function education(props) {
                   type="text"
                   onChange={handleChange}
                   name="organization"
-                  placeholder="eg. Hindu college"
+                  placeholder="eg. Bangladesh University"
                   id=""
                 />
               </div>
