@@ -158,7 +158,7 @@ export default function EmployeSignup() {
               onClick={signupemploye}
               id="employeformbtn"
             >
-              {loading ? "Loading..." : "Post for Free"}
+              {loading ? "Loading..." : "Signup"}
         
             </button>
           </form>

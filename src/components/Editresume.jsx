@@ -133,20 +133,20 @@ export default function Editresume(props) {
                   value={formData.contact}
                   onChange={handleChange}
                   placeholder="Add contact details"
-                  onKeyPress={(e) => {
-                    // Allow only numbers
-                    const pattern = /[0-9]/;
-                    const isValidInput = pattern.test(e.key);
-                    if (!isValidInput) {
-                      e.preventDefault();
-                    }
-                  }}
+                  // onKeyPress={(e) => {
+                  //   // Allow only numbers
+                  //   const pattern = /[0-9]/;
+                  //   const isValidInput = pattern.test(e.key);
+                  //   if (!isValidInput) {
+                  //     e.preventDefault();
+                  //   }
+                  // }}
                 />
-                {formData.contact && !/^\d{10}$/.test(formData.contact) && (
+                {/* {formData.contact && (
                   <p className="text-xl mt-1 text-red-500">
                     Please enter a valid 10-digit contact number
                   </p>
-                )}
+                )} */}
               </div>
               <div className="w-[50%]">
                 <h1 className=" mt-16 text-2xl font-bold mb-2 text-[#272727c1]">
@@ -191,8 +191,6 @@ export default function Editresume(props) {
             <button
               type="submit"
               disabled={
-                !formData.contact ||
-                formData.contact.length !== 10 || // Disable if contact number length is not 10
                 !formData.firstname ||
                 formData.firstname.length < 3 || // Disable if first name length is less than 3
                 !formData.lastname ||
@@ -204,9 +202,7 @@ export default function Editresume(props) {
                 !/^\S+@\S+\.\S+$/.test(formData.email) // Disable if email is not valid
               }
               className={`px-[4vh] mt-[5vh] py-[2vh] ml-[40vh] max-[600px]:ml-[15vh] text-2xl font-semibold rounded-2xl text-white bg-[#008BDC] ${
-                (!formData.contact ||
-                  formData.contact.length !== 10 ||
-                  !formData.firstname ||
+                (!formData.firstname ||
                   formData.firstname.length < 3 ||
                   !formData.lastname ||
                   formData.lastname.length < 3 ||

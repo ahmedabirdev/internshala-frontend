@@ -156,7 +156,7 @@ export default function InternshipDetail() {
               </div>
               <div className="">
                 <h1 className="text-2xl font-semibold text-[#090909e0]  ">
-                  ₹ {data.stipend.amount}/month
+                  $ {data.stipend.amount}/year
                 </h1>
               </div>
             </div>

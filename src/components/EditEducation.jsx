@@ -71,7 +71,7 @@ export default function Editeducation(props) {
                   value={formData.organization}
                   onChange={handleChange}
                   name="organization"
-                  placeholder="eg. Hindu college"
+                  placeholder="eg. Bangladesh University"
                   id=""
                 />
               </div>

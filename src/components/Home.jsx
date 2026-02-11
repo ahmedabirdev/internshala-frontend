@@ -13,9 +13,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import Internships from "./SeeInternships";
-import Jobs from "./SeeJobs";
 import { Link } from "react-router-dom";
+import AllInternships from './Internships';
+import AllJobs from './Jobs';
 
 export default function Home() {
   const [showLogin, setShowLogin] = useState(false); // State to control the visibility of the login component
@@ -35,7 +35,7 @@ export default function Home() {
     <>
       <div className="homenav">
         <div className="homenavleft">
-          <img 
+          <img
             src="https://ik.imagekit.io/sunnykurmi/logo.webp?updatedAt=1708749688574"
             alt="" />
           <h2
@@ -128,10 +128,11 @@ export default function Home() {
         </div>
       </div>
       <div ref={internshipsRef}>
-        <Internships />
+        {/* <Internships /> */}
+        <AllInternships />
       </div>
       <div ref={jobsRef}>
-        <Jobs />
+        <AllJobs />
       </div>
       <img className="home" src="https://ik.imagekit.io/sunnykurmi/home.jpg?updatedAt=1708749737993" alt="" />
       <div className="marquee">

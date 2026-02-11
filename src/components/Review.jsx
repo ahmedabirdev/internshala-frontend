@@ -106,7 +106,7 @@ function Review() {
         {internship.students.length} Applications for {internship.profile}
       </h1>
       <div className="w-full mb-[10vh] flex items-center justify-center">
-        <div className="w-[70%] max-[600px]:w-[100%] mt-[5vh]  border-2 rounded-xl ">
+        <div className="w-[90%] max-[600px]:w-[100%] mt-[5vh]  border-2 rounded-xl ">
           <div className="w-full px-[5vh] h-[10vh] bg-[#F8F8F8] flex justify-between items-center ">
             <div className=" w-[20%] text-2xl max-[600px]:text-xs text-[#1f1f1fbd] uppercase  font-semibold ">
               Name

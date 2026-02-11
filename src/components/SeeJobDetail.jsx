@@ -138,7 +138,7 @@ export default function JobDetail() {
               </div>
               <div className="">
                 <h1 className="text-2xl font-semibold text-[#090909e0]  ">
-                  ₹ {data.salary}
+                  $ {data.salary} k/month
                 </h1>
               </div>
             </div>

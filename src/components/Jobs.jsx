@@ -12,7 +12,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchJobs } from "../store/Actions/jobsAction";
 import { Link } from "react-router-dom";
 
-export default function Internships() {
+export default function AllJobs() {
   const dispatch = useDispatch();
   const { data, loading, error } = useSelector((state) => state.jobs);
 

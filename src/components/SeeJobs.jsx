@@ -97,7 +97,7 @@ export default function Internships() {
                   />
                   {item.salary && (
                     <>
-                      <h4>₹ {item.salary}</h4>
+                      <h4>$ {item.salary} k/month</h4>
                     </>
                   )}
                 </div>

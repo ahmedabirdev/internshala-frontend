@@ -206,16 +206,16 @@ function EmployeEdit() {
                   value={formData.contact}
                   onChange={handleChange}
                   placeholder="Add contact details"
-                  onKeyPress={(e) => {
-                    // Allow only numbers
-                    const pattern = /[0-9]/;
-                    const isValidInput = pattern.test(e.key);
-                    if (!isValidInput) {
-                      e.preventDefault();
-                    }
-                  }}
+                  // onKeyPress={(e) => {
+                  //   // Allow only numbers
+                  //   const pattern = /[0-9]/;
+                  //   const isValidInput = pattern.test(e.key);
+                  //   if (!isValidInput) {
+                  //     e.preventDefault();
+                  //   }
+                  // }}
                 />
-                {formData.contact && !/^\d{10}$/.test(formData.contact) && (
+                {formData.contact && (
                   <p className="text-xl mt-1 text-red-500">
                     Please enter a valid 10-digit contact number
                   </p>
